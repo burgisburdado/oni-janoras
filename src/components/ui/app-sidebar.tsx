@@ -45,7 +45,7 @@ export function AppSidebar() {
     <Sidebar>
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>ONI JANORAS</SidebarGroupLabel>
+          <SidebarGroupLabel className="text-slate-50 text-4xl">ONI JANORAS</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => (

@@ -11,9 +11,9 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-stone-950">
         <SidebarProvider>
-      <AppSidebar />
-      <main>
-        <SidebarTrigger />
+          <AppSidebar />
+          <main className="border-l-4 border-l-lime-500">
+            <SidebarTrigger />
             {children}
           </main>
         </SidebarProvider>

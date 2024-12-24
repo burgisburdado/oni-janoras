@@ -1,4 +1,7 @@
+'use client'
+
 import { Clapperboard, FileImage, Music, User, Workflow } from "lucide-react"
+import { usePathname } from "next/navigation"
 import {
   Sidebar,
   SidebarContent,
@@ -9,37 +12,48 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
+import CollapsSidebar from "../collapse-sidebar"
+
 
 // Menu items.
 const items = [
   {
-    title: "Work",
-    url: "/work",
+    id: 1,
+    name: "Work",
+    path: "/work",
     icon: Workflow,
   },
   {
-    title: "Videos",
-    url: "/videos",
+    id: 2,
+    name: "Videos",
+    path: "/videos",
     icon: Clapperboard,
   },
   {
-    title: "Graphics",
-    url: "/graphics",
+    id: 3,
+    name: "Graphics",
+    path: "/graphics",
     icon: FileImage,
   },
   {
-    title: "Music",
-    url: "/music",
+    id: 4,
+    name: "Music",
+    path: "/music",
     icon: Music,
   },
   {
-    title: "About",
-    url: "/about",
+    id: 5,
+    name: "About",
+    path: "/about",
     icon: User,
   },
 ]
 
+
+
 export function AppSidebar() {
+  const pathname = usePathname();
+  const isActive = (path) => path ===pathname;
   return (
     <Sidebar className="pr-4">
       <SidebarContent>
@@ -56,22 +70,30 @@ export function AppSidebar() {
                 <span>UI / UX Engineer</span>
               </div>
             </div>
-           
             
+
           </SidebarGroupLabel>
           <SidebarGroupContent>
-            <SidebarMenu>
+            <CollapsSidebar/>
+
+
+            {/* <SidebarMenu>
               {items.map((item) => (
-                <SidebarMenuItem key={item.title}>
+                <SidebarMenuItem key={item.id}>
                   <SidebarMenuButton asChild>
-                    <a href={item.url}>
+                    <a
+                      href={item.path}
+                      className={isActive(item.path) ? 'active' : ''}
+                    >
                       <item.icon />
-                      <span>{item.title}</span>
+                      <span>{item.name}</span>
                     </a>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
-            </SidebarMenu>
+            </SidebarMenu> */}
+
+            
           </SidebarGroupContent>
           <SidebarGroupContent>
             <div className="flex gap-2">

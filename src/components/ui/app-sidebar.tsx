@@ -1,16 +1,12 @@
 'use client'
 
 import { Clapperboard, FileImage, Music, User, Workflow } from "lucide-react"
-import { usePathname } from "next/navigation"
 import {
   Sidebar,
   SidebarContent,
   SidebarGroup,
   SidebarGroupContent,
   SidebarGroupLabel,
-  SidebarMenu,
-  SidebarMenuButton,
-  SidebarMenuItem,
 } from "@/components/ui/sidebar"
 import CollapsSidebar from "../collapse-sidebar"
 
@@ -52,8 +48,7 @@ const items = [
 
 
 export function AppSidebar() {
-  const pathname = usePathname();
-  const isActive = (path) => path ===pathname;
+
   return (
     <Sidebar className="pr-4">
       <SidebarContent>
@@ -70,31 +65,10 @@ export function AppSidebar() {
                 <span>UI / UX Engineer</span>
               </div>
             </div>
-            
-
           </SidebarGroupLabel>
-          <SidebarGroupContent>
-            <CollapsSidebar/>
 
-
-            {/* <SidebarMenu>
-              {items.map((item) => (
-                <SidebarMenuItem key={item.id}>
-                  <SidebarMenuButton asChild>
-                    <a
-                      href={item.path}
-                      className={isActive(item.path) ? 'active' : ''}
-                    >
-                      <item.icon />
-                      <span>{item.name}</span>
-                    </a>
-                  </SidebarMenuButton>
-                </SidebarMenuItem>
-              ))}
-            </SidebarMenu> */}
-
-            
-          </SidebarGroupContent>
+          <CollapsSidebar/>
+          
           <SidebarGroupContent>
             <div className="flex gap-2">
               <a className="hover:text-stone-500 text-stone-700 text-sm" href="mailto:oznai01@gmail.com" target="_blank">Email</a>

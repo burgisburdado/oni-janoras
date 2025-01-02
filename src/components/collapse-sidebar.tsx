@@ -2,7 +2,6 @@
 
 import Link from "next/link"
 import { Clapperboard, FileImage, Music, User, Workflow } from "lucide-react"
-import { usePathname } from "next/navigation"
 
 const items = [
   {
@@ -38,17 +37,16 @@ const items = [
 ];
 
 export default function CollapsSidebar() {
-  const pathname = usePathname();
 
   return (
     <nav>
-      <ul className="flex flex-col gap-6">
+      <ul className="pl-2 flex flex-col gap-6">
         {items.map((item) => {
           return (
             <li key={item.id}>
               <Link
                 href={item.path}
-                className="flex gap-4 active:text-[#BBFF00] focus:text-[#BBFF00] uppercase font-medium"
+                className="flex gap-4 hover:text-2xl text-lg tracking-wide font-bold hover:text-[#BBFF00] active:text-[#BBFF00] focus:text-[#BBFF00] uppercase ease-in-out duration-300 hover:animate-pulse"
               >
                 <item.icon/>
                 {item.name}

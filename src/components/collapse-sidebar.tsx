@@ -1,7 +1,9 @@
 'use client'
 
-import Link from "next/link"
 import { Clapperboard, FileImage, Music, User, Workflow } from "lucide-react"
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { Button, buttonVariants } from "./ui/button";
 
 const items = [
   {
@@ -37,26 +39,32 @@ const items = [
 ];
 
 export default function CollapsSidebar() {
+  const router = useRouter(); 
+  const [activeButton, setActiveButton] = useState<string | null>(null);
 
   return (
     <nav>
       <ul className="pl-2 flex flex-col gap-6">
-        {items.map((item) => {
-          return (
-            <li key={item.id}>
-              <Link
-                href={item.path}
-                className="flex gap-4 hover:text-2xl text-lg tracking-wide font-bold hover:text-[#BBFF00] active:text-[#BBFF00] focus:text-[#BBFF00] uppercase ease-in-out duration-300 hover:animate-pulse"
-              >
-                <item.icon/>
-                {item.name}
-              </Link>
-            </li>
-
-          )
-
-        })}
+        {items.map((item) => (
+          <li key={item.id} className="flex flex-col">
+            <Button
+              onClick={() => {
+                router.push(item.path);
+                setActiveButton(item.path);
+              }}
+              variant={activeButton === item.path ? "link" : "outline"}
+              className={`
+                flex gap-4 text-lg tracking-wide font-bold uppercase border-none no-underline
+                ease-in-out duration-300 
+                ${activeButton === item.path ? 'text-[#BBFF00] no-underline' : 'text-stone-400 '}
+              `}
+            >
+              <item.icon className="mr-2"/>
+              {item.name}
+            </Button>
+          </li>
+        ))}
       </ul>
     </nav>
-  )
-};
+  );
+}

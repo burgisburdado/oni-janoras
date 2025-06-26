@@ -41,7 +41,7 @@ export default function Videos() {
         </h1>
         
         {/* Responsive Carousel */}
-        <Carousel className="w-full opacity-75 hover:opacity-100">
+        <Carousel className="w-full opacity-50 hover:opacity-100">
           <CarouselContent>
             {videoConfigs.map((video, index) => (
               <CarouselItem 

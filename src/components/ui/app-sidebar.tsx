@@ -9,6 +9,7 @@ import {
   SidebarGroupLabel,
 } from "@/components/ui/sidebar"
 import CollapsSidebar from "../collapse-sidebar"
+import Link from "next/link"
 
 
 // Menu items.
@@ -55,11 +56,11 @@ export function AppSidebar() {
         <SidebarGroup>
           <SidebarGroupLabel>
             <div className="flex flex-col">
-              <a href="/" className="text-stone-300 text-2xl font-['RedSeven'] flex flex-col">
+              <Link href="/" className="text-stone-300 text-2xl font-['RedSeven'] flex flex-col">
                 <div><span className="text-[#45EAD9]">O</span>NI</div>
                 <div><span className="text-[#BBFF00]">J</span>ANORAS</div>
-              </a>
-              <div className="flex flex-row gap-2 text-sm">
+              </Link>
+              <div className="flex flex-row gap-2 text-sm"> 
                 <span>Head of Design</span>
                 <span>.</span>
                 <span>UI / UX Engineer</span>
@@ -71,11 +72,11 @@ export function AppSidebar() {
           
           <SidebarGroupContent>
             <div className="flex gap-2">
-              <a className="hover:text-stone-500 text-stone-700 text-sm" href="mailto:oznai01@gmail.com" target="_blank">Email</a>
+              <Link href="mailto:oznai01@gmail.com" target="_blank" className="hover:text-stone-500 text-stone-700 text-sm">Email</Link>
               <span>.</span>
-              <a className="hover:text-stone-500 text-stone-700 text-sm" href="https://www.linkedin.com/in/burgisburdado/" target="_blank">LinkedIn</a>
+              <Link className="hover:text-stone-500 text-stone-700 text-sm" href="https://www.linkedin.com/in/burgisburdado/" target="_blank">LinkedIn</Link>
               <span>.</span>
-              <a className="hover:text-stone-500 text-stone-700 text-sm" href="https://www.proudcloud.io" target="_blank">Proudcloud</a>
+              <Link className="hover:text-stone-500 text-stone-700 text-sm" href="https://www.proudcloud.io" target="_blank">Proudcloud</Link>
             </div>
           </SidebarGroupContent>
         </SidebarGroup>

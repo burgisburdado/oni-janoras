@@ -3,7 +3,7 @@
 import { Clapperboard, FileImage, Music, User, Workflow } from "lucide-react"
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { Button, buttonVariants } from "./ui/button";
+import { Button } from "./ui/button";
 
 const items = [
   {

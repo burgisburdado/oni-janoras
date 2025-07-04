@@ -1,6 +1,5 @@
 'use client'
 
-import { Clapperboard, FileImage, Music, User, Workflow } from "lucide-react"
 import {
   Sidebar,
   SidebarContent,
@@ -10,43 +9,6 @@ import {
 } from "@/components/ui/sidebar"
 import CollapsSidebar from "../collapse-sidebar"
 import Link from "next/link"
-
-
-// Menu items.
-const items = [
-  {
-    id: 1,
-    name: "Work",
-    path: "/work",
-    icon: Workflow,
-  },
-  {
-    id: 2,
-    name: "Videos",
-    path: "/videos",
-    icon: Clapperboard,
-  },
-  {
-    id: 3,
-    name: "Graphics",
-    path: "/graphics",
-    icon: FileImage,
-  },
-  {
-    id: 4,
-    name: "Music",
-    path: "/music",
-    icon: Music,
-  },
-  {
-    id: 5,
-    name: "About",
-    path: "/about",
-    icon: User,
-  },
-]
-
-
 
 export function AppSidebar() {
 

@@ -8,8 +8,8 @@ import { Button } from "./ui/button";
 const items = [
   {
     id: 1,
-    name: "Work",
-    path: "/work",
+    name: "Works",
+    path: "/works",
     icon: Workflow,
   },
   {

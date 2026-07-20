@@ -12,11 +12,12 @@ export default function About() {
          <p className="text-stone-400 text-lg mb-6">Experienced UI/UX & Visual Designer with a BFA in Advertising from Far Eastern University.
          </p>
          <h3 className="text-stone-100 text-4xl mb-10">Key Strengths & Skills</h3>
-         <ul className="mb-8 text-stone-100">
-            <li>Design & Prototyping: UI/UX, responsive web design, interaction design systems, logos, print, and traditional art (drawing, oil/acrylic painting).</li>
-            <li>Frontend Development: Converts designs into clean code using HTML, CSS, Bootstrap, Tailwind, React, and Next.js (with experience in Ruby on Rails projects).</li>
-            <li>Design Tools: Figma, Sketch, Adobe Creative Cloud (Photoshop, Illustrator, XD, Premiere, Lightroom), DaVinci Resolve, Axure, and InVision.</li>
-            <li>Workflow: GitHub and Pivotal Tracker.</li>
+         <ul className="mb-8 text-stone-100 flex gap-8">
+            <li><b className="text-[#BBFF00]">Design & Prototyping:</b> UI/UX, responsive web design, interaction design systems, logos, print, and traditional art (drawing, oil/acrylic painting).</li>
+            <li><b className="text-[#BBFF00]">Frontend Development:</b> Converts designs into clean code using HTML, CSS, Bootstrap, Tailwind, React, and Next.js (with experience in Ruby on Rails projects).</li>
+            <li><b className="text-[#BBFF00]">Video Editing and Directing:</b> Converts stories into a visual motion and story-telling using DaVinci Resolve, Photoshop and ProCreate.</li>
+            <li><b className="text-[#BBFF00]">Design Tools:</b> Figma, Sketch, Adobe Creative Cloud (Photoshop, Illustrator, XD, Premiere, Lightroom), DaVinci Resolve, Axure, and InVision.</li>
+            <li><b className="text-[#BBFF00]">Workflow:</b> GitHub and Pivotal Tracker.</li>
           </ul>
           <p className="text-stone-400 text-lg mb-6">In short: A versatile designer who bridges the gap between traditional fine art, modern digital design, and frontend code.
           </p>

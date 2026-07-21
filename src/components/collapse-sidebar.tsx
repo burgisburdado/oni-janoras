@@ -8,8 +8,8 @@ import { Button } from "./ui/button";
 const items = [
   {
     id: 1,
-    name: "Work",
-    path: "/work",
+    name: "Works",
+    path: "/works",
     icon: Workflow,
   },
   {
@@ -55,7 +55,7 @@ export default function CollapsSidebar() {
               variant={activeButton === item.path ? "link" : "outline"}
               className={`
                 flex gap-4 text-lg tracking-wide font-bold uppercase border-none no-underline
-                ease-in-out duration-300 
+                ease-in-out duration-300 hover:text-[#BBFF00]
                 ${activeButton === item.path ? 'text-[#BBFF00] no-underline' : 'text-stone-400 '}
               `}
             >

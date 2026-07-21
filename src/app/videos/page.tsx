@@ -11,19 +11,19 @@ export default function Videos() {
   // Array of video configurations for easier management
   const videoConfigs = [
     {
-      id: "vFw9fHN6Bhc",
+      id: "FIPOdovEwyw",
       title: "First Video Showcase"
     },
     {
-      id: "dQw4w9WgXcQ",
+      id: "eJxyoGFDF9U",
       title: "Second Video Showcase"
     },
     {
-      id: "3JluqThjrK8",
+      id: "yZYnJ_2bkxY",
       title: "Third Video Showcase"
     },
     {
-      id: "JGwehk6j_r0",
+      id: "CFnIEqVQ27k",
       title: "Fourth Video Showcase"
     },
     {

@@ -24,6 +24,8 @@ export default function About() {
           </ul>
           <p className="text-stone-400 text-lg mb-6">In short: A versatile designer who bridges the gap between traditional fine art, modern digital design, and frontend code.
           </p>
+          <p className="text-stone-400 text-lg mb-6">Special thanks to <b className='text-stone-100'>Cris Mallajos</b> for fixing backend related errors. Check out his <a className="text-[#BBFF00]" href="https://github.com/sibicb">GIthub Account</a>. Feel free to message him if need his skills.
+          </p>
        </div>
         
               

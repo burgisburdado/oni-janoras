@@ -18,18 +18,18 @@ const items = [
     path: "/videos",
     icon: Clapperboard,
   },
-  {
-    id: 3,
-    name: "Graphics",
-    path: "/graphics",
-    icon: FileImage,
-  },
-  {
-    id: 4,
-    name: "Music",
-    path: "/music",
-    icon: Music,
-  },
+  // {
+  //   id: 3,
+  //   name: "Graphics",
+  //   path: "/graphics",
+  //   icon: FileImage,
+  // },
+  // {
+  //   id: 4,
+  //   name: "Music",
+  //   path: "/music",
+  //   icon: Music,
+  // },
   {
     id: 5,
     name: "About",

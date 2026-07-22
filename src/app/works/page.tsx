@@ -12,7 +12,7 @@ export default function Works() {
           className="absolute bottom-0 right-0 left-0 top-0 opacity-85"
           scene="https://prod.spline.design/yQNZ6ySx3BbqP0Oo/scene.splinecode" 
         />
-        <h1 data-aos="fade-right" className="text-stone-100 text-8xl">WORKS PAGE</h1>
+        <h1 data-aos="fade-right" className="text-stone-100 text-8xl">PROJECTS</h1>
         <p  data-aos="fade-left" className="text-stone-50 text-4xl w-2/4">Dynamic shifts in tone and texture guide the viewer's eye or reader's focus seamlessly through the work, ensuring that no single component feels accidental or redundant. This foundational layout provides the necessary stability, allowing the work to support complex thematic ideas without losing its structural integrity or visual logic.</p>
       </div>
       <div className="pb-14 pt-12 bg-gradient-to-r from-neutral-100 to-stone-200  h-fit w-full gap-10 flex flex-col">

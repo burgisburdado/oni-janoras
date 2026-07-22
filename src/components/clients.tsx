@@ -39,7 +39,8 @@ export default function Clients() {
 
     <Carousel
       plugins={[Autoplay({delay: 2500, }) ]}
-    
+      className="relative left-0"
+
     >
       <CarouselContent className="px-8">
         

@@ -4,8 +4,8 @@ import Clients from "@/components/clients"
 export default function Works() {
 
   return (
-    <main className="relative border-l-2 border-l-[#BBFF00] h-full flex flex-col justify-center overflow-hidden">
-      <div className="h-3/4 bg-stone-950">
+    <main className="relative border-l-2 border-l-[#BBFF00] h-full flex flex-col justify-center overflow-hidden overscroll-none">
+      <div className="h-3/4 bg-stone-950 flex items-center justify-center">
         <h1 className="text-stone-100 text-7xl">WORKS PAGE</h1>
       </div>
       <div className="pb-14 pt-12 bg-gradient-to-r from-neutral-100 to-stone-200  h-fit w-full">

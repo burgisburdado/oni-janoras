@@ -2,6 +2,11 @@ import { Button } from "@/components/ui/button";
 import { Instagram, NotebookPen, PencilRuler, Youtube } from "lucide-react"
 import Link from 'next/link'
 import Spline from '@splinetool/react-spline/next'
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
 
 
 export default function Home() {
@@ -16,13 +21,54 @@ export default function Home() {
         <Button
         className="text-lime-600 hover:text-[#BBFF00] -ml-2 float-right"
         variant="link"
-        size="sm">View work</Button>
+        size="lg">View work</Button>
       </div>
-      <div className="absolute right-4 top-64 flex flex-col gap-8 text-stone-500">
-        <Link className="hover:text-[#BBFF00]" href="https://www.behance.net/seen_evrthng" target="_blank"><PencilRuler/></Link>
-        <Link className="hover:text-[#BBFF00]" href="https://www.notion.so/Designer-Workflow-762d2eaf89ad42479977900fa97385c9" target="_blank"><NotebookPen/></Link>
-        <Link className="hover:text-[#BBFF00]" href="https://www.instagram.com/seen_evrthng/" target="_blank"><Instagram/></Link>
-        <Link className="hover:text-[#BBFF00]" href="https://www.youtube.com/@seen_evrthng" target="_blank"><Youtube/></Link>
+      <div className="absolute right-12 top-64 flex flex-col gap-12 text-stone-500">
+
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Link className="hover:text-[#BBFF00]" href="https://www.behance.net/seen_evrthng" target="_blank"><PencilRuler size={48}/></Link>
+
+          </TooltipTrigger>
+          <TooltipContent>
+            <p className="text-2xl">Behance</p>
+          </TooltipContent>
+        </Tooltip>
+
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Link className="hover:text-[#BBFF00]" href="https://www.notion.so/Designer-Workflow-762d2eaf89ad42479977900fa97385c9" target="_blank"><NotebookPen size={48}/></Link>
+
+          </TooltipTrigger>
+          <TooltipContent>
+            <p className="text-2xl">Notion</p>
+          </TooltipContent>
+        </Tooltip>
+
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Link className="hover:text-[#BBFF00]" href="https://www.instagram.com/seen_evrthng/" target="_blank"><Instagram size={48}/></Link>
+
+          </TooltipTrigger>
+          <TooltipContent>
+            <p className="text-2xl">Instagram</p>
+          </TooltipContent>
+        </Tooltip>
+
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Link className="hover:text-[#BBFF00]" href="https://www.youtube.com/@seen_evrthng" target="_blank"><Youtube size={48}/></Link>
+
+          </TooltipTrigger>
+          <TooltipContent>
+            <p className="text-2xl">YouTube</p>
+          </TooltipContent>
+        </Tooltip>
+
+        
+        
+        
+        
       </div>
       
     </main>

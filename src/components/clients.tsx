@@ -1,6 +1,5 @@
 "use client"
 
-import * as React from "react"
 import Autoplay from "embla-carousel-autoplay"
 
 import {
@@ -32,6 +31,7 @@ import Mythmakers from "../app/images/mythmakers.png"
 import Perle from "../app/images/perle.png"
 import Prestige from "../app/images/prestige.png"
 import Superfanz from "../app/images/superfanz.png"
+import Mober from "../app/images/mober.png"
 
 export default function Clients() {
 
@@ -39,10 +39,22 @@ export default function Clients() {
 
     <Carousel
       plugins={[Autoplay({delay: 2500, }) ]}
-      className="relative left-0"
+      className="absolute left-0 top-0 w-full"
 
     >
       <CarouselContent className="px-8">
+
+        <CarouselItem className="h-48 w-48">
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Image className="h-48 w-48 rounded-3xl" src={Mober} alt="Mober" />
+
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className="text-2xl">Mober</p>
+            </TooltipContent>
+          </Tooltip>
+        </CarouselItem>
         
         <CarouselItem className="h-48 w-48">
           <Tooltip>

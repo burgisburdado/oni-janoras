@@ -1,3 +1,15 @@
+"use client"
+
+import * as React from "react"
+import Autoplay from "embla-carousel-autoplay"
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel"
+
+
 import {
   Tooltip,
   TooltipContent,
@@ -25,162 +37,198 @@ export default function Clients() {
 
   return (
 
-    <main className="flex flex-row gap-8 py-16 overflow-x-auto">
-      
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <Image className="ml-8 h-48 w-48 rounded-3xl" src={Synthnode} alt="Synthnode" />
-
-        </TooltipTrigger>
-        <TooltipContent>
-          <p className="text-2xl">Synthnode</p>
-        </TooltipContent>
-      </Tooltip>
-
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <Image className="h-48 w-48 rounded-3xl" src={Clauduino} alt="Clauduinio" />
-
-        </TooltipTrigger>
-        <TooltipContent>
-          <p className="text-2xl">Clauduinio</p>
-        </TooltipContent>
-      </Tooltip>
-
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <Image className="h-48 w-48 rounded-3xl" src={Blissart} alt="Blissart" />
-
-        </TooltipTrigger>
-        <TooltipContent>
-          <p className="text-2xl">Blissart</p>
-        </TooltipContent>
-      </Tooltip>
+    <Carousel
+      plugins={[Autoplay({delay: 2500, }) ]}
     
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <Image className="h-48 w-48 rounded-3xl" src={Documo} alt="Documo" />
+    >
+      <CarouselContent className="px-8">
+        
+        <CarouselItem className="h-48 w-48">
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Image className="h-48 w-48 rounded-3xl" src={Synthnode} alt="Synthnode" />
 
-        </TooltipTrigger>
-        <TooltipContent>
-          <p className="text-2xl">Documo</p>
-        </TooltipContent>
-      </Tooltip>
-      
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <Image className="h-48 w-48 rounded-3xl" src={Duon} alt="Duon" />
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className="text-2xl">Synthnode</p>
+            </TooltipContent>
+          </Tooltip>
+        </CarouselItem>
 
-        </TooltipTrigger>
-        <TooltipContent>
-          <p className="text-2xl">Duon</p>
-        </TooltipContent>
-      </Tooltip>
+        <CarouselItem className="h-48 w-48">
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Image className="h-48 w-48 rounded-3xl" src={Clauduino} alt="Clauduinio" />
 
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <Image className="h-48 w-48 rounded-3xl" src={Gameworks} alt="Gameworks" />
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className="text-2xl">Clauduinio</p>
+            </TooltipContent>
+          </Tooltip>
+        </CarouselItem>
 
-        </TooltipTrigger>
-        <TooltipContent>
-          <p className="text-2xl">Gameworks</p>
-        </TooltipContent>
-      </Tooltip>
+        <CarouselItem className="h-48 w-48">
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Image className="h-48 w-48 rounded-3xl" src={Blissart} alt="Blissart" />
 
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <Image className="h-48 w-48 rounded-3xl" src={Heyroomie} alt="Heyroomie" />
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className="text-2xl">Blissart</p>
+            </TooltipContent>
+          </Tooltip>
+        </CarouselItem>
 
-        </TooltipTrigger>
-        <TooltipContent>
-          <p className="text-2xl">Heyroomie</p>
-        </TooltipContent>
-      </Tooltip>
+        <CarouselItem className="h-48 w-48">
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Image className="h-48 w-48 rounded-3xl" src={Documo} alt="Documo" />
 
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <Image className="h-48 w-48 rounded-3xl" src={Hivehero} alt="Hivehero" />
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className="text-2xl">Documo</p>
+            </TooltipContent>
+          </Tooltip>
+        </CarouselItem>
 
-        </TooltipTrigger>
-        <TooltipContent>
-          <p className="text-2xl">Hivehero</p>
-        </TooltipContent>
-      </Tooltip>
-      
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <Image className="h-48 w-48 rounded-3xl" src={Ikigaidojo} alt="Ikigaidojo" />
+        <CarouselItem className="h-48 w-48">
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Image className="h-48 w-48 rounded-3xl" src={Duon} alt="Duon" />
 
-        </TooltipTrigger>
-        <TooltipContent>
-          <p className="text-2xl">Ikigaidojo</p>
-        </TooltipContent>
-      </Tooltip>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className="text-2xl">Duon</p>
+            </TooltipContent>
+          </Tooltip>
+        </CarouselItem>
 
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <Image className="h-48 w-48 rounded-3xl" src={Metatech} alt="Metatech" />
+        <CarouselItem className="h-48 w-48">
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Image className="h-48 w-48 rounded-3xl" src={Gameworks} alt="Gameworks" />
 
-        </TooltipTrigger>
-        <TooltipContent>
-          <p className="text-2xl">Metatech</p>
-        </TooltipContent>
-      </Tooltip>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className="text-2xl">Gameworks</p>
+            </TooltipContent>
+          </Tooltip>
+        </CarouselItem>
 
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <Image className="h-48 w-48 rounded-3xl" src={Minglechain} alt="Minglechain" />
+        <CarouselItem className="h-48 w-48">
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Image className="h-48 w-48 rounded-3xl" src={Heyroomie} alt="Heyroomie" />
 
-        </TooltipTrigger>
-        <TooltipContent>
-          <p className="text-2xl">Minglechain</p>
-        </TooltipContent>
-      </Tooltip>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className="text-2xl">Heyroomie</p>
+            </TooltipContent>
+          </Tooltip>
+        </CarouselItem>
 
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <Image className="h-48 w-48 rounded-3xl" src={Mythmakers} alt="Mythmakers" />
+        <CarouselItem className="h-48 w-48">
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Image className="h-48 w-48 rounded-3xl" src={Hivehero} alt="Hivehero" />
 
-        </TooltipTrigger>
-        <TooltipContent>
-          <p className="text-2xl">Mythmakers</p>
-        </TooltipContent>
-      </Tooltip>
-      
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <Image className="h-48 w-48 rounded-3xl" src={Perle} alt="Perle" />
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className="text-2xl">Hivehero</p>
+            </TooltipContent>
+          </Tooltip>
+        </CarouselItem>
 
-        </TooltipTrigger>
-        <TooltipContent>
-          <p className="text-2xl">Perle</p>
-        </TooltipContent>
-      </Tooltip>
+        <CarouselItem className="h-48 w-48">
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Image className="h-48 w-48 rounded-3xl" src={Ikigaidojo} alt="Ikigaidojo" />
 
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <Image className="h-48 w-48 rounded-3xl" src={Prestige} alt="Prestige" />
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className="text-2xl">Ikigaidojo</p>
+            </TooltipContent>
+          </Tooltip>
+        </CarouselItem>
 
-        </TooltipTrigger>
-        <TooltipContent>
-          <p className="text-2xl">Prestige</p>
-        </TooltipContent>
-      </Tooltip>
-      
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <Image className="mr-8 h-48 w-48 rounded-3xl" src={Superfanz} alt="Superfanz" />
+        <CarouselItem className="h-48 w-48">
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Image className="h-48 w-48 rounded-3xl" src={Metatech} alt="Metatech" />
 
-        </TooltipTrigger>
-        <TooltipContent>
-          <p className="text-2xl">Superfanz</p>
-        </TooltipContent>
-      </Tooltip>
-      
-      
-      
-      
-    </main>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className="text-2xl">Metatech</p>
+            </TooltipContent>
+          </Tooltip>
+        </CarouselItem>
+
+        <CarouselItem className="h-48 w-48">
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Image className="h-48 w-48 rounded-3xl" src={Minglechain} alt="Minglechain" />
+
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className="text-2xl">Minglechain</p>
+            </TooltipContent>
+          </Tooltip>
+        </CarouselItem>
+
+
+        <CarouselItem className="h-48 w-48">
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Image className="h-48 w-48 rounded-3xl" src={Mythmakers} alt="Mythmakers" />
+
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className="text-2xl">Mythmakers</p>
+            </TooltipContent>
+          </Tooltip>
+        </CarouselItem>
+
+        <CarouselItem className="h-48 w-48">
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Image className="h-48 w-48 rounded-3xl" src={Perle} alt="Perle" />
+
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className="text-2xl">Perle</p>
+            </TooltipContent>
+          </Tooltip>
+        </CarouselItem>
+
+        <CarouselItem className="h-48 w-48">
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Image className="h-48 w-48 rounded-3xl" src={Prestige} alt="Prestige" />
+
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className="text-2xl">Prestige</p>
+            </TooltipContent>
+          </Tooltip>
+        </CarouselItem>
+
+        <CarouselItem className="h-48 w-48">
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Image className="h-48 w-48 rounded-3xl" src={Superfanz} alt="Superfanz" />
+
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className="text-2xl">Superfanz</p>
+            </TooltipContent>
+          </Tooltip>
+        </CarouselItem>
+
+
+      </CarouselContent>
+    
+    </Carousel>
+   
   )
 
 }

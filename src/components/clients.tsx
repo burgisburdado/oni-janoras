@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/tooltip"
 
 import Image from "next/image"
+import Tort from "../app/images/tort.png"
 import Synthnode from "../app/images/synthnode.png"
 import Clauduino from "../app/images/clauduino.png"
 import Blissart from "../app/images/blissart.png"
@@ -43,7 +44,7 @@ export default function Clients() {
 
     >
       <CarouselContent className="px-8">
-
+        
         <CarouselItem className="h-48 w-48">
           <Tooltip>
             <TooltipTrigger asChild>
@@ -76,6 +77,18 @@ export default function Clients() {
             </TooltipTrigger>
             <TooltipContent>
               <p className="text-2xl">Clauduinio</p>
+            </TooltipContent>
+          </Tooltip>
+        </CarouselItem>
+
+        <CarouselItem className="h-48 w-48">
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Image className="h-48 w-48 rounded-3xl" src={Tort} alt="Mober" />
+
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className="text-2xl">Tort</p>
             </TooltipContent>
           </Tooltip>
         </CarouselItem>

@@ -1,5 +1,9 @@
-
-
+import HoverCard from "@/components/hover-card"
+import BCPatas from "../app/images/bc-patas.png"
+import Roomie from "../app/images/featured-roomie.png"
+import Tort from "../app/images/featured-tort.png"
+import Duon from "../app/images/featured-duon.png"
+import Metatech from "../app/images/featured-metatech.png"
 
 export default function Featured() {
   return (
@@ -7,12 +11,66 @@ export default function Featured() {
     <main>
 
       <div className="grid grid-cols-3 grid-rows-2 gap-2 px-10">
-        <div className="bg-white h-80 rounded-3xl text-center">1</div>
-        <div className="bg-white h-80 rounded-3xl text-center" >2</div>
-        <div className="bg-white h-80 rounded-3xl text-center" >3</div>
-        <div className="bg-white h-80 rounded-3xl text-center" >4</div>
-        <div className="bg-white h-80 rounded-3xl text-center" >5</div>
-        <div className="bg-white h-80 rounded-3xl text-center" >6</div>
+        <div>
+          <HoverCard 
+            imageUrl={BCPatas}
+            title="Black Canvas - Patas"
+            description="A Cebu, Philippine based band Lyric Video."
+            task="Video Director, Editor, concept, drummer"
+            url="https://youtu.be/FIPOdovEwyw?si=uwk1HUH512AzAAdW"
+          />
+        </div>
+
+        <div>
+          <HoverCard 
+            imageUrl={Roomie}
+            title="Hey Roomie"
+            description="a fan engagement and community-building platform that acts as a virtual home base for content creators, organizations, and their fans."
+            task="UI/UX Design, Mobile App, Admin CMS"
+            url="https://heyroomie.vip/"
+          />
+        </div>
+
+        <div>
+          <HoverCard 
+            imageUrl={Tort}
+            title="Tort"
+            description="A cloud-based business management platform designed specifically for personal injury law firms in US."
+            task="UI/UX Design, Static Website"
+            url="https://www.tortapp.com/"
+          />
+        </div>
+
+        <div>
+          <HoverCard 
+            imageUrl={Duon}
+            title="Duon"
+            description="The Philippines first real-time indoor navigation app. Find shops, ATMs, restrooms, elevators, and more with just a few taps."
+            task="UI/UX Design, Responsive Design, Admin CMS, Kiosk UI/UX"
+            url="https://duon.ph/"
+          />
+        </div>
+
+        <div>
+          <HoverCard 
+            imageUrl={Metatech}
+            title="Metatech Lab"
+            description="Research and development company focus on building products that harness the power of sensors"
+            task="Branding Design"
+            url="https://sleepy-cori-fa09d4.netlify.app/"
+          />
+        </div>
+
+        <div>
+          <HoverCard 
+            imageUrl={BCPatas}
+            title="Black Canvas - Patas"
+            description="A Cebu, Philippine based band Lyric Video."
+            url="https://heyroomie.vip/"
+          />
+        </div>
+      
+       
       </div>
     
     </main>

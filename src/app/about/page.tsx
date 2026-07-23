@@ -8,10 +8,13 @@ export default function About() {
           scene="https://prod.spline.design/XAEmDj7XgENc2ZdR/scene.splinecode" 
         />
        <div className='z-50'>
-         <h1 className="text-stone-100 text-7xl mb-10">Quick Summary</h1>
-         <p className="text-stone-400 text-lg mb-6">Experienced UI/UX & Visual Designer with a BFA in Advertising from Far Eastern University.
+          <div>
+            
+          </div>
+         <h1 className="text-stone-100 text-7xl mb-10">Oni Roco Janoras</h1>
+         <p className="text-stone-400 text-lg mb-6">Experienced UI/UX & Visual Designer from Philippines.
          </p>
-         <h3 className="text-stone-100 text-4xl mb-10">Key Strengths & Skills</h3>
+         <h3 className="text-stone-100 text-4xl mb-10">More than 10 Years of Experience in Design Industry</h3>
          <ul className="mb-8 text-stone-100 flex gap-8 text-2xl">
             <li><b className="text-[#BBFF00]">Design & Prototyping:</b> UI/UX, responsive web design, interaction design systems, logos, print, and traditional art (drawing, oil/acrylic painting).</li>
             

@@ -13,7 +13,7 @@ export default function Featured() {
       <div className="grid grid-cols-3 grid-rows-2 gap-2 px-10">
         <div>
           <HoverCard 
-            imageUrl="BCPatas"
+            image={BCPatas.src}
             title="Black Canvas - Patas"
             description="A Cebu, Philippine based band Lyric Video."
             task="Video Director, Editor, concept, drummer"
@@ -23,7 +23,7 @@ export default function Featured() {
 
         <div>
           <HoverCard 
-            imageUrl="Roomie"
+            image={Roomie.src}
             title="Hey Roomie"
             description="a fan engagement and community-building platform that acts as a virtual home base for content creators, organizations, and their fans."
             task="UI/UX Design, Mobile App, Admin CMS"
@@ -33,7 +33,7 @@ export default function Featured() {
 
         <div>
           <HoverCard 
-            imageUrl="Tort"
+            image={Tort.src}
             title="Tort"
             description="A cloud-based business management platform designed specifically for personal injury law firms in US."
             task="UI/UX Design, Static Website"
@@ -43,7 +43,7 @@ export default function Featured() {
 
         <div>
           <HoverCard 
-            imageUrl="Duon"
+            image={Duon.src}
             title="Duon"
             description="The Philippines first real-time indoor navigation app. Find shops, ATMs, restrooms, elevators, and more with just a few taps."
             task="UI/UX Design, Responsive Design, Admin CMS, Kiosk UI/UX"
@@ -53,7 +53,7 @@ export default function Featured() {
 
         <div>
           <HoverCard 
-            imageUrl="Metatech"
+            image={Metatech.src}
             title="Metatech Lab"
             description="Research and development company focus on building products that harness the power of sensors"
             task="Branding Design"
@@ -61,15 +61,6 @@ export default function Featured() {
           />
         </div>
 
-        <div>
-          <HoverCard 
-            imageUrl="BCPatas"
-            title="Black Canvas - Patas"
-            description="A Cebu, Philippine based band Lyric Video."
-            task="Branding Design"
-            url="https://heyroomie.vip/"
-          />
-        </div>
       
        
       </div>

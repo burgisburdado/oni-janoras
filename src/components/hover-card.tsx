@@ -3,7 +3,7 @@ import Image from "next/image"
 import Link from 'next/link';
 
 interface HoverCardProps {
-  imageUrl: string;
+  image: string;
   description: string;
   task: string;
   title?: string;
@@ -11,8 +11,10 @@ interface HoverCardProps {
   url: string;
 }
 
+
+
 const HoverCard: React.FC<HoverCardProps> = ({ 
-  imageUrl, 
+  image, 
   description,
   task, 
   title, 
@@ -23,7 +25,7 @@ const HoverCard: React.FC<HoverCardProps> = ({
 
     <Link href={url} rel="noopener noreferrer" target="_blank" className="bg-white flex justify-center items-center relative group w-full h-80 rounded-3xl overflow-hidden cursor-pointer">
       {/* Background Image */}
-      <Image className="w-fit object-cover transition-transform duration-500 ease-out group-hover:scale-110" src={imageUrl} alt={altText || title || "Card image"} />
+      <img className="w-fit object-cover transition-transform duration-500 ease-out group-hover:scale-110" src={image} alt={altText || title || "Card image"} />
       
 
       {/* Hover Overlay */}

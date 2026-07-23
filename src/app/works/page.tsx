@@ -3,6 +3,7 @@ import Clients from "@/components/clients"
 import Featured from "@/components/featured"
 import Tools from "@/components/tools"
 import Spline from '@splinetool/react-spline/next'
+import { ArrowBigDownDash } from "lucide-react"
 
 export default function Works() {
 
@@ -15,9 +16,13 @@ export default function Works() {
         />
         <h1 data-aos="fade-right" className="text-stone-100 text-8xl">PROJECTS</h1>
         <p  data-aos="fade-left" className="text-stone-50 text-4xl w-2/4">Dynamic shifts in tone and texture guide the viewer's eye or reader's focus seamlessly through the work, ensuring that no single component feels accidental or redundant. This foundational layout provides the necessary stability, allowing the work to support complex thematic ideas without losing its structural integrity or visual logic.</p>
-        <h5 className="text-stone-900 text-1xl font-bold z-50">TOOL OF TRADE
+        <h5 className="text-stone-900 text-1xl font-bold z-50">TOOLS OF TRADE
         </h5>
         <Tools />
+        <div className="absolute bottom-56 right-20 self-center">
+          <p className="text-stone-900 -ml-2 text-2xl">Scroll down</p>
+          <ArrowBigDownDash size={38} color="#1C1917"/>
+        </div>
       </div>
       <div className="pb-14 pt-12 bg-gradient-to-r from-neutral-100 to-stone-200  h-fit w-full gap-10 flex flex-col">
         <h5 className="text-stone-900 text-1xl font-bold mx-10 mb-8">

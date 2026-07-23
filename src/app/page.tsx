@@ -1,7 +1,7 @@
-import { Button } from "@/components/ui/button";
-import { Instagram, NotebookPen, PencilRuler, Youtube } from "lucide-react"
+import { Instagram, NotebookPen, PencilRuler, Youtube} from "lucide-react"
 import Link from 'next/link'
 import Spline from '@splinetool/react-spline/next'
+import Tools from "@/components/tools"
 import {
   Tooltip,
   TooltipContent,
@@ -17,12 +17,12 @@ export default function Home() {
         scene="https://prod.spline.design/2CMstdWvrSsixKKM/scene.splinecode"
         
       />
-      <div className="absolute bottom-40 left-50 w-3/6 h-min self-center">
-        <Button
-        className="text-lime-600 hover:text-[#BBFF00] -ml-2 float-right"
-        variant="link"
-        size="lg">View work</Button>
+      <div className="absolute flex flex-col gap-10 left-20 bottom-60">
+        <h5 className="text-stone-50 text-1xl font-bold z-50">TOOLS OF TRADE
+        </h5>
+        <Tools />
       </div>
+      
       <div className="absolute right-12 top-64 flex flex-col gap-12 text-stone-500">
 
         <Tooltip>

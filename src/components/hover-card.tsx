@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from "next/image"
 import Link from 'next/link';
 
 interface HoverCardProps {
@@ -25,11 +24,11 @@ const HoverCard: React.FC<HoverCardProps> = ({
 
     <Link href={url} rel="noopener noreferrer" target="_blank" className="bg-white flex justify-center items-center relative group w-full h-80 rounded-3xl overflow-hidden cursor-pointer">
       {/* Background Image */}
-      <img className="w-fit object-cover transition-transform duration-500 ease-out group-hover:scale-110" src={image} alt={altText || title || "Card image"} />
+      <img className="w-fit object-cover transition-transform duration-500 ease-out group-hover:scale-110  group-hover:blur-sm group-hover:grayscale" src={image} alt={altText || title || "Card image"} />
       
 
       {/* Hover Overlay */}
-      <div className="absolute inset-0 bg-black/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-6 text-center text-stone-100">
+      <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-6 text-center">
         
         {/* Optional Title with a slight slide-up animation */}
         {title && (

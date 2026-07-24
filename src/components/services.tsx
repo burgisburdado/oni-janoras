@@ -6,13 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
+
 const items = [
   {
     value: "kit",
@@ -54,7 +48,7 @@ export default function Services() {
       </h5>
       
       <div>
-        <Accordion defaultValue={["plans"]} className="flex flex-col gap-8">
+        <Accordion type="multiple" defaultValue={["kit"]} className="flex flex-col gap-8">
           {items.map((item) => (
             <AccordionItem key={item.value} value={item.value}>
               <AccordionTrigger>{item.trigger}</AccordionTrigger>
@@ -62,6 +56,7 @@ export default function Services() {
             </AccordionItem>
           ))}
         </Accordion>
+        
       </div>
 
         

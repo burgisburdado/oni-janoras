@@ -9,7 +9,7 @@ export default function Works() {
 
   return (
     <main className="relative border-l-2 border-l-[#BBFF00] flex flex-col overflow-hidden">
-      <div className="relative h-screen bg-stone-950 flex items-start justify-center flex-col pl-10 gap-10">
+      <div className="relative h-screen bg-stone-950 flex items-start justify-start flex-col pl-10 pt-36 gap-10">
         <Spline
           className="absolute bottom-0 right-0 left-0 top-0 opacity-85"
           scene="https://prod.spline.design/yQNZ6ySx3BbqP0Oo/scene.splinecode" 
@@ -19,10 +19,11 @@ export default function Works() {
         <h5 className="text-stone-900 text-1xl font-bold z-50">TOOLS OF TRADE
         </h5>
         <Tools />
-        <div className="absolute bottom-56 right-20 self-center">
-          <p className="text-stone-900 -ml-2 text-2xl">Scroll down</p>
+        <div data-aos="fade-down-right" className="absolute left-14 bottom-20">
+          <p className="text-stone-900 -ml-2 text-1xl">Scroll down</p>
           <ArrowBigDownDash size={38} color="#1C1917"/>
         </div>
+        
       </div>
       <div className="pb-14 pt-12 bg-gradient-to-r from-neutral-100 to-stone-200  h-fit w-full gap-10 flex flex-col">
         <h5 className="text-stone-900 text-1xl font-bold mx-10 mb-8">

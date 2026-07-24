@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Tooltip,
   TooltipContent,
@@ -16,6 +18,9 @@ import Davinci from "../app/images/davinci.png"
 import Procreate from "../app/images/procreate.png"
 import PS from "../app/images/ps.png"
 import Reaper from "../app/images/reaper.png"
+
+
+import "aos/dist/aos.css";
 
 export default function Tools() {
 

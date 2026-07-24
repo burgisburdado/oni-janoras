@@ -1,6 +1,7 @@
 
 import Clients from "@/components/clients"
 import Featured from "@/components/featured"
+import Services from "@/components/services"
 import Tools from "@/components/tools"
 import Spline from '@splinetool/react-spline/next'
 import { ArrowBigDownDash } from "lucide-react"
@@ -42,6 +43,8 @@ export default function Works() {
         </div>
 
         < Featured />
+
+        <Services />
 
 
       </div>

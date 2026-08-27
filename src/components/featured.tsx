@@ -31,7 +31,7 @@ export default function Featured() {
             title="Black Canvas - Patas"
             description="A Cebu, Philippine based band Lyric Video."
             task="Video Director, Editor, concept, drummer"
-            url="https://youtu.be/FIPOdovEwyw?si=uwk1HUH512AzAAdW"
+            url="https://www.youtube.com/watch?v=CQQvjXYMYUs"
           />
         </div>
 

@@ -17,58 +17,30 @@ export default function Videos() {
     {
       id: "CQQvjXYMYUs",
       title: "Patas"
-    },
-    {
-      id: "lyMdJHKboVQ",
-      title: "Saksi ang Langit Cover"
-    },
-    {
-      id: "CFnIEqVQ27k",
-      title: "Fourth Video Showcase"
-    },
-    {
-      id: "oYmzdvMoUUA",
-      title: "Fifth Video Showcase"
     }
   ];
 
   return (
     <main className="relative overflow-hidden border-l-2 border-l-[#BBFF00] h-screen w-full pr-8">
       {/* Content Wrapper with Better Positioning */}
-      <div className="absolute w-full top-32 z-50 px-8 md:px-16 lg:px-40">
-        <h1 className="text-stone-900 font-medium text-4xl md:text-6xl lg:text-7xl mb-10">
-          Videos Page
-        </h1>
-        
-        {/* Responsive Carousel */}
-        <Carousel className="w-full opacity-50 hover:opacity-100">
-          <CarouselContent>
-            {videoConfigs.map((video, index) => (
-              <CarouselItem 
-                key={video.id} 
-                className="flex justify-center items-center"
-              >
-                <div className="w-full max-w-4xl aspect-video">
-                  <iframe 
-                    width="100%" 
-                    height="100%" 
-                    src={`https://www.youtube.com/embed/${video.id}?si=GZZ4aCwVA9C-w01X&amp;controls=0`} 
-                    title={`${video.title} - Video ${index + 1}`} 
-                    frameBorder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerPolicy="strict-origin-when-cross-origin" 
-                    allowFullScreen
-                    className="rounded-lg shadow-lg"
-                  />
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
+      <div className="absolute flex w-full justify-items-center content-center gap-4 top-32 z-50 px-8">
+        {videoConfigs.map((video, index) => (
           
-          {/* Navigation Buttons with Responsive Positioning */}
-          <CarouselPrevious className="left-0 md:left-4 lg:left-8" />
-          <CarouselNext className="right-0 md:right-4 lg:right-8" />
-        </Carousel>
+          <div key={video.id} className="w-full aspect-video">
+            <iframe 
+              width="100%" 
+              height="100%" 
+              src={`https://www.youtube.com/embed/${video.id}?si=GZZ4aCwVA9C-w01X&amp;controls=0`} 
+              title={`${video.title} - Video ${index + 1}`} 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerPolicy="strict-origin-when-cross-origin" 
+              allowFullScreen
+              className="rounded-lg shadow-lg"
+            />
+          </div>
+        ))}
+          
       </div>
       
       {/* Spline Background with Performance Considerations */}

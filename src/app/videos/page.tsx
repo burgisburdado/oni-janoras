@@ -1,11 +1,4 @@
 import Spline from '@splinetool/react-spline/next'
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
 
 export default function Videos() {
   // Array of video configurations for easier management
@@ -22,7 +15,6 @@ export default function Videos() {
 
   return (
     <main className="relative overflow-hidden border-l-2 border-l-[#BBFF00] h-screen w-full pr-8">
-      {/* Content Wrapper with Better Positioning */}
       <div className="absolute flex w-full justify-items-center content-center gap-4 top-32 z-50 px-8">
         {videoConfigs.map((video, index) => (
           
